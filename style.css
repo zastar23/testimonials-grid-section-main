@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --step--2: clamp(0.66rem, 0.54rem + 0.59vw, 0.96rem);
+    --step--1: clamp(0.70rem, 0.51rem + 0.97vw, 1.20rem);
+    --step-0: clamp(0.75rem, 0.46rem + 1.46vw, 1.50rem);
+    --step-1: clamp(0.80rem, 0.38rem + 2.10vw, 1.88rem);
+    --step-2: clamp(0.85rem, 0.27rem + 2.91vw, 2.34rem);
+    --step-3: clamp(0.91rem, 0.12rem + 3.94vw, 2.93rem);
+    --step-4: clamp(0.97rem, -0.08rem + 5.25vw, 3.66rem);
+    --step-5: clamp(1.04rem, -0.34rem + 6.91vw, 4.58rem);
+    --moderate_violet: hsl(263, 55%, 52%);
+    --gray_blue: hsl(217, 19%, 35%);
+    --black_blue: hsl(219, 29%, 14%);
+    --light_gray: hsl(0, 0%, 81%);
+    --light_gray_blue:  hsl(210, 46%, 95%);
+}
+
+body {
+    font-size: var(--step-0);
+    background-color: var(--light_gray);
+}
+
+img {
+    border-radius: 40px;
+    border: 2px solid #fff
+}
+
+h2 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+}
+
+h4 {
+    opacity: 50%;
+}
+
+.main {
+    display: grid;
+    gap: 2em;
+    padding: 2em;
+}
+
+.card {
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+}
+
+.flex {
+    display: flex;
+    gap: 1em;
+}
+
+.title__div {
+    align-self: center;
+}
