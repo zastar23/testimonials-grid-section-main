@@ -71,7 +71,7 @@ p {
 }
 
 .title__div {
-    align-self: flex-start;
+    align-self: flex-end;
 }
 
 .background__accent__purple {
