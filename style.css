@@ -28,6 +28,7 @@ body {
 }
 
 img {
+    width: 2rem;
     border-radius: 40px;
     border: 2px solid #fff
 }
@@ -35,6 +36,7 @@ img {
 h2 {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 600;
+    margin-top: 1em;
 }
 
 h3 {
@@ -46,6 +48,12 @@ h4 {
     opacity: 50%;
 }
 
+p {
+    opacity: 70%;
+    margin-top: 2em;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
 .main {
     display: grid;
     gap: 2em;
@@ -53,16 +61,48 @@ h4 {
 }
 
 .card {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding: 1em;
+    padding: 2em;
+    border-radius: 10px;
 }
 
 .flex {
     display: flex;
-    gap: 1em;
+    gap: 1.5em;
 }
 
 .title__div {
-    align-self: center;
+    align-self: flex-start;
+}
+
+.background__accent__purple {
+    background-color: var(--moderate_violet);
+}
+
+.background__accent__gray {
+    background-color: var(--gray_blue);
+}
+
+.dark__background {
+    background-color: var(--black_blue);
+}
+
+.light__background {
+    background-color: #fff;
+}
+
+.color__accent__light {
+    color: white;
+}
+
+.color__accent__dark {
+    color: var(--gray_blue);
+}
+
+@media (min-width: 700px) {
+    .main {
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
