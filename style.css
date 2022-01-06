@@ -28,7 +28,7 @@ body {
 }
 
 img {
-    width: 2rem;
+    width: 70%;
     border-radius: 40px;
     border: 2px solid #fff
 }
@@ -56,13 +56,11 @@ p {
 
 .main {
     display: grid;
-    gap: 2em;
+    gap: 1.5em;
     padding: 2em;
 }
 
 .card {
-    width: 90%;
-    margin: auto;
     padding: 2em;
     border-radius: 10px;
 }
@@ -100,9 +98,19 @@ p {
     color: var(--gray_blue);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1300px) {
     .main {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid__span__2 {
+        grid-column: span 2;
+    }
+
+    .position {
+        grid-column: 4 / 5;
+        grid-row: 1;
+        grid-row-end: 3;
     }
 
 }
